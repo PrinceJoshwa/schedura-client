@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://schedura-server-page.vercel.app/api';
 
 export const saveResume = async (resumeData, token) => {
   try {
