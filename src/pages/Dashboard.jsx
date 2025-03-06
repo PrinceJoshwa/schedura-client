@@ -20,7 +20,7 @@ function Dashboard() {
   const createMenuRef = useRef(null)
   const dropdownRefs = useRef({})
 
-  const API_URL = import.meta.env.VITE_API_URL || 'https://schedura-server-page.vercel.app/api';
+  // const API_URL = import.meta.env.VITE_API_URL || 'https://schedura-server-page.vercel.app/api';
   useEffect(() => {
     if (!isAuthenticated()) {
       navigate("/login")
@@ -58,7 +58,7 @@ function Dashboard() {
         throw new Error("No token found")
       }
 
-      const res = await axios.get(`${API_URL}/bookings`, {
+      const res = await axios.get(`${import.meta.env.VITE_API_URL}/bookings`, {
         headers: { 'Authorization': `Bearer ${token}` },
       })
 
