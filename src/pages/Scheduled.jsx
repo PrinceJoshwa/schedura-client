@@ -694,7 +694,7 @@ function Scheduled() {
       }
 
       const res = await axios.get(`${import.meta.env.VITE_API_URL}/bookings`, {
-        headers: { Authorization: `Bearer ${token}` },
+        headers: { 'Authorization': `Bearer ${token}` },
       });
 
       console.log("Fetched bookings:", res.data);

@@ -41,7 +41,7 @@
 //         `${import.meta.env.VITE_API_URL}/bookings`,
 //         bookingData,
 //         {
-//           headers: { Authorization: `Bearer ${token}` },
+//            `Bearer ${token}` },
 //         }
 //       );
   
@@ -176,7 +176,7 @@ function CreateEvent() {
       console.log("Sending booking data:", bookingData)
 
       const response = await axios.post(`${import.meta.env.VITE_API_URL}/bookings`, bookingData, {
-        headers: { Authorization: `Bearer ${token}` },
+        headers: { 'Authorization': `Bearer ${token}` },
       })
 
       if (response.data) {

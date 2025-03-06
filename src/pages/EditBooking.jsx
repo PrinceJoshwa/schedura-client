@@ -29,7 +29,7 @@ function EditBooking() {
       try {
         const token = getToken()
         const response = await axios.get(`${import.meta.env.VITE_API_URL}/bookings/${bookingId}`, {
-          headers: { Authorization: `Bearer ${token}` },
+          headers: { 'Authorization': `Bearer ${token}` },
         })
 
         const bookingData = response.data
@@ -60,7 +60,7 @@ function EditBooking() {
     try {
       const token = getToken()
       await axios.put(`${import.meta.env.VITE_API_URL}/bookings/${bookingId}`, formData, {
-        headers: { Authorization: `Bearer ${token}` },
+        headers: { 'Authorization': `Bearer ${token}` },
       })
       navigate("/dashboard")
     } catch (error) {

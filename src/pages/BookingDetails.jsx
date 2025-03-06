@@ -183,7 +183,7 @@ function BookingDetails() {
       try {
         const token = getToken()
         const response = await axios.get(`${import.meta.env.VITE_API_URL}/bookings/${bookingId}`, {
-          headers: { Authorization: `Bearer ${token}` },
+          headers: { 'Authorization': `Bearer ${token}` },
         })
 
         console.log("Booking details fetched:", response.data)
@@ -358,7 +358,7 @@ function BookingDetails() {
                     const token = getToken()
                     axios
                       .delete(`${import.meta.env.VITE_API_URL}/bookings/${bookingId}`, {
-                        headers: { Authorization: `Bearer ${token}` },
+                        headers: { 'Authorization': `Bearer ${token}` },
                       })
                       .then(() => {
                         navigate("/dashboard")
