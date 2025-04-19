@@ -1,5 +1,4 @@
 // /** 
-// // @type {import('tailwindcss').Config} */
 //  const shadcnConfig = {
 //   darkMode: ["class"],
 //   content: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}", "*.{js,ts,jsx,tsx,mdx}"],

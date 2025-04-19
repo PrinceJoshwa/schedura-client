@@ -1017,7 +1017,7 @@ function Scheduled() {
                     <td className="px-6 py-4 whitespace-nowrap text-right">
                       <button
                         onClick={() => handleViewDetails(booking._id)}
-                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                        className="bg-violet-500 hover:bg-violet-700 text-white font-bold py-2 px-4 rounded"
                       >
                         View Details
                       </button>
